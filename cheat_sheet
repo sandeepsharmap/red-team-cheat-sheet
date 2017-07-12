@@ -75,3 +75,7 @@ rm ~/.bash_history;ln -s /dev/null ~/.bash_history
 
 #if root
 chmod -R 0 /var/log/*
+
+#EXTERNAL RESOURCES
+https://jivoi.github.io/2015/08/21/pentest-tips-and-tricks-number-2/
+
