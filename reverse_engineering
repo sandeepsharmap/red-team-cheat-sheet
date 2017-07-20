@@ -62,3 +62,17 @@ x/1s 0xFFFFF
 #mapped address spaces
 i proc m
 
+#RADARE2
+
+#Using rarun2 to pass stdin/args from files/scripts
+$cat foo.rr2
+#!/usr/bin/rarun2
+program=./pp400
+arg0=10
+stdin=foo.txt
+chdir=/tmp
+
+#then just run like so:
+r2 -R foo.rr2 -d binary
+#chroot=.
+   ./foo.rr2
